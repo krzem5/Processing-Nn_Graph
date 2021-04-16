@@ -34,11 +34,11 @@ void graph_nn(int[] nn, int C_SZ, int B_SZ, int F_SZ) {
     fill(0);
     text(nn[j], (j+1)*(width/(nn.length+1)), F_SZ*2);
     pop();
-    if (nn[j]<=4) {    
+    if (nn[j]<=4) {
       for (int i=0; i<nn[j]; i++) {
         circle((j+1)*(width/(nn.length+1)), (i+1)*(height/(float)(nn[j]+1)), C_SZ);
       }
-    } else {    
+    } else {
       for (int i=0; i<5; i++) {
         if (i!=3) {
           circle((j+1)*(width/(nn.length+1)), (i+1)*(height/6), C_SZ);

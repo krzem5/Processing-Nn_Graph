@@ -1,1 +1,3 @@
-start "" "projects/Processing-Nn_Graph\index/index.pde"
+@echo off
+cls
+python build.py %*
